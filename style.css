@@ -3,14 +3,19 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex: 1;
+    margin: 0;
 
 }
 
 header {
     display: flex;
     justify-content: space-around;
-
+    background-color: #1F2937;
+}
+header > h3 {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 ul {
@@ -20,25 +25,97 @@ ul {
     padding: 0;
     margin: 0;
     align-items: center;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
+
 }
 
 footer {
     display: flex;
     justify-content: center;
+    margin-top: auto;
+    background-color: #1F2937;
     
 }
 
-#sect2 {
-    flex-direction: column;
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
 
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 8px;
+    border: 0;
+    padding: 8px 32px;
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
 }
 
 .cards {
     display: flex;
+}
+
+.call2action {
+    background-color: #3882F6;
+}
+
+#heroimage {
+    background-color: grey;
+    flex: 1 0 400px;
+    height:250px;
+    text-align: center;
+}
+
+#sect1 {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px;
+    flex-wrap: wrap;
+}
+
+#sect1div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 400px;
+}
+
+#sect2 {
+    flex-direction: column;
+    flex:2;
+}
+
+#sect3 {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#quoteauthor {
+    background-color: white;
+    background-color: #E5E7EB;
+    font-weight: bold;
+    font-size: 18px;
 }
