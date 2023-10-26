@@ -5,17 +5,14 @@ body {
     flex-direction: column;
     flex: 1;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
     background-color: #1F2937;
-}
-header > h3 {
-    font-size: 24px;
-    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -34,7 +31,7 @@ section {
     align-items: center;
     justify-content: center;
     flex: 1;
-
+    min-height: 300px;
 }
 
 footer {
@@ -42,15 +39,20 @@ footer {
     justify-content: center;
     margin-top: auto;
     background-color: #1F2937;
-    
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 h1 {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    margin:0;
+    padding-bottom: 0;
 
 }
+
+
 
 button {
     background-color: #3882F6;
@@ -67,14 +69,58 @@ blockquote {
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
+    margin-bottom: 8px;
+}
+
+.widthcontainer {
+    max-width: 1200px;
 }
 
 .cards {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    margin:  16px 48px;
+    text-align: center;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+    border: #3882F6 4px solid;
+    border-radius: 10px;
+}
+
+.card > p {
+    margin-top: 8px;
 }
 
 .call2action {
     background-color: #3882F6;
+    padding: 24px 48px;
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    border-radius: 10px;
+    gap: 48px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#call-button {
+    border: 2px white solid;
+    padding: 8px 32px;
+
 }
 
 #heroimage {
@@ -84,6 +130,10 @@ blockquote {
     text-align: center;
 }
 
+#section1 {
+    background-color: #1F2937;
+}
+
 #sect1 {
     background-color: #1F2937;
     color: #E5E7EB;
@@ -91,7 +141,7 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:100px;
+    padding: 100px;
     flex-wrap: wrap;
 }
 
@@ -102,20 +152,51 @@ blockquote {
 }
 
 #sect2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 {
     flex-direction: column;
     flex:2;
 }
 
-#sect3 {
+#section3 {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
+}
 
+.container > h4 {
+    margin-bottom: 0;
+}
+
+.container > p{
+    margin-top: 8px;
 }
 
 #quoteauthor {
-    background-color: white;
     background-color: #E5E7EB;
     font-weight: bold;
     font-size: 18px;
+    color: #1F2937;
+    justify-content: flex-end;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex: 1
+}
+
+#header > h3 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+#sect2 > h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
